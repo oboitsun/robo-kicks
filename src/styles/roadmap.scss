@@ -1,0 +1,57 @@
+@import "./variables.scss";
+#roadmap {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .progressbar {
+    grid-template-columns: 84px 1fr;
+    place-items: center;
+    place-content: center;
+    column-gap: 10px;
+    row-gap: 40px;
+  }
+
+  .progress-legend:nth-child(even) {
+    text-align: right;
+  }
+  .progress-circle {
+    width: 84px;
+    height: 84px;
+  }
+  .bar-mob {
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 43px;
+  }
+  .legend {
+    @apply absolute  text-white max-w-min text-center leading-none;
+    top: 55%;
+    left: 55%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .planet {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 33%;
+    transform: translateX(-100%);
+  }
+  @media (min-width: 1024px) {
+    .progressbar {
+      grid-template-columns: 1fr 92px 1fr;
+      place-items: center;
+      place-content: center;
+      row-gap: 40px;
+    }
+    .bar {
+      height: 90%;
+      position: absolute;
+      top: 10%;
+      left: 50.2%;
+      transform: translateX(0%);
+    }
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

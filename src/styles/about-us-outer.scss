@@ -1,0 +1,32 @@
+.outer {
+  width: calc(100% - 40px);
+  top: 0%;
+  transform: translateX(-50%);
+  left: 50%;
+
+  .moon {
+    position: absolute;
+    left: -10%;
+    width: 6%;
+  }
+  .metheor {
+    position: absolute;
+    top: -4%;
+    right: -10px;
+    width: 10%;
+    z-index: 0;
+  }
+  .metheor-2 {
+    position: absolute;
+    top: 92%;
+    left: -9%;
+    width: 13%;
+  }
+  .planet {
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    width: 33%;
+    transform: translateX(100%);
+  }
+}

@@ -1,0 +1,99 @@
+@import "./variables.scss";
+#hero-section {
+  padding-top: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  height: 888px;
+  display: flex;
+  position: relative;
+
+  .welcome-to {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title:first-child {
+    color: #fff;
+  }
+  .title {
+    line-height: 1;
+    color: white;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  .title-big {
+    color: $purp;
+    font-size: 32px;
+  }
+  .timer {
+    font-family: "Montserrat", sans-serif;
+    width: 214px;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    place-content: center;
+  }
+
+  .timer-digits {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 64px;
+    text-align: center;
+  }
+  .timer-date {
+    font-size: 8px;
+    font-weight: 400;
+    color: white;
+    @media (min-width: 1024px) {
+      font-size: 10px;
+    }
+  }
+  .splash {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1024px) {
+    align-items: center;
+
+    max-height: 758px;
+
+    .splash {
+      flex-direction: row;
+    }
+
+    .welcome-to {
+      justify-content: center;
+    }
+
+    .title {
+      font-size: 50px;
+    }
+    .title-big {
+      font-size: 50px;
+    }
+    .timer {
+      width: 314px;
+    }
+    .connect-wallet {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    align-items: center;
+
+    max-height: 758px;
+    .welcome-to {
+      max-width: 579px;
+    }
+    .title {
+      font-size: 64px;
+    }
+    .title-big {
+      font-size: 64px;
+    }
+  }
+}

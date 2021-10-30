@@ -1,0 +1,60 @@
+@import "./variables.scss";
+#contact-us {
+  padding: 40px 0;
+  .contact-grid {
+    margin: 24px 0;
+    display: grid;
+    gap: 24px;
+  }
+  .form-input {
+    background: #000;
+    border: 3px solid #a762ea;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 20px;
+  }
+  .form-input::placeholder {
+    color: white;
+  }
+  .submit {
+    height: 56px;
+    background: $purp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: "MOntserrat", sans-serif;
+    width: 100%;
+    padding: 0 40px;
+    color: #fff;
+    border: 3px solid #a762ea;
+    transition: all 0.5s;
+  }
+  .submit:hover {
+    font-size: 18px;
+    background: black;
+  }
+  @media (min-width: 1024px) {
+    padding: 100px 0;
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .form-input {
+    }
+
+    .comment {
+      grid-column: 1/4;
+    }
+    .submit {
+      align-self: flex-end;
+      width: 40%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

@@ -1,0 +1,42 @@
+@import "./variables.scss";
+#team {
+  .robo-container {
+    margin-bottom: 40%;
+  }
+  .robo {
+    width: 95%;
+    position: relative;
+    z-index: 10;
+  }
+  .metheor {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .team-name {
+    font-size: 20px;
+  }
+  .team-pos {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  @media (min-width: 1024px) {
+    .team-name {
+      font-size: 24px;
+    }
+    .team-pos {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .team-name {
+      font-size: 32px;
+    }
+    .team-pos {
+      font-size: 16px;
+    }
+  }
+}
